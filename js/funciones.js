@@ -21,6 +21,22 @@ function onSignIn(googleUser) {
     console.log("ID Token: " + id_token);
     mostrarmenuUsuario();
 
+
+    $.ajax({
+        method: "POST",
+        url: "some.php",
+        data: { 
+            "name": profile.getName(), 
+            "urlimagen": profile.getImageUrl(),
+            "email": profile.getEmail(),
+            "token": id_token
+        }
+    })
+    .done(function( msg ) {
+        alert( "Data Saved: " + msg );
+    });
+
+
 }
 
 function mostrarmenuUsuario() {
@@ -32,6 +48,11 @@ function mostrarmenuUsuario() {
 
     oplogin.style.display = "none";
     iniciasesion.style.display = "none";
+
+
+
+
+
 }
 function mostrarmenuLogin() {
     usuariologeado.style.display = "none";
