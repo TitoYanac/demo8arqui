@@ -1,5 +1,5 @@
 
-let posy=0;
+let posy;
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
@@ -7,7 +7,7 @@ if (annyang) {
       alert("Bienvenido a ECPROJECT");
     },
     'subir': function() {
-    	posy += -600;
+    	posy = (posy>=600)? $(window).scrollTop()-600: 0;
       window.scroll({
 		  top: posy,
 		  behavior: 'smooth'
@@ -15,7 +15,7 @@ if (annyang) {
       
     },
     'bajar': function() {
-    	posy += 600;
+    	posy = $(window).scrollTop()+600;
       window.scroll({
 		  top: posy,
 		  behavior: 'smooth'
