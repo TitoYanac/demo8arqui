@@ -1,0 +1,28 @@
+{
+  "name": "Arquitectura de Software",
+  "version": "1.0.0",
+  "description": "curso 2020-2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hola": "echo 'Hola Mundo'",
+    "convertir": "node-sass --watch /css/scss/style.scss:/css/style2.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TitoYanac/ECPROJECT.git"
+  },
+  "keywords": [
+    "ECPROJECT"
+  ],
+  "author": "GRUPO DEL CURSO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TitoYanac/ECPROJECT/issues"
+  },
+  "homepage": "https://github.com/TitoYanac/ECPROJECT#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "node-sass": "^5.0.0"
+  }
+}
