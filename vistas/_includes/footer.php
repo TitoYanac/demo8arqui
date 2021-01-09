@@ -139,6 +139,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
     <script src="../../js/funciones.js"></script>
 
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    
+    <script src="../../js/voz.js"></script>
+
+
 
 
 

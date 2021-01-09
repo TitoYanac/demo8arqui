@@ -1,6 +1,6 @@
 <?php include '../_includes/header.php'; ?>
-
 <?php include 'componentes/brand.php'; ?>
+
 
 <?php include 'componentes/categorias.php'; ?>
     
