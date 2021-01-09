@@ -1,5 +1,5 @@
 
-
+let posy=0;
 if (annyang) {
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
@@ -8,17 +8,17 @@ if (annyang) {
     },
     'subir': function() {
       window.scroll({
-		  top: -500,
-		  left: 0,
+		  top: posy,
 		  behavior: 'smooth'
 		});
+      posy += -600;
     },
     'bajar': function() {
       window.scroll({
-		  top: 500,
-		  left: 0,
+		  top: posy,
 		  behavior: 'smooth'
 		});
+      posy += 600;
     },
     'inicio': function() {
       location.href="https://dry-eyrie-04718.herokuapp.com/vistas/inicio/inicio.php";
