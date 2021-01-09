@@ -32,6 +32,21 @@
     <meta name="google-signin-client_id" content="872420345741-fp89sihiuhkagpu8hkcrgbek0uba16eg.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Fin login google -->
+
+
+
+    <!-- google  Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MM8E6RXG0P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MM8E6RXG0P');
+    </script>
+
+
 </head>
 
 <body>
