@@ -7,18 +7,20 @@ if (annyang) {
       alert("Bienvenido a ECPROJECT");
     },
     'subir': function() {
+    	posy += -600;
       window.scroll({
 		  top: posy,
 		  behavior: 'smooth'
 		});
-      posy += -600;
+      
     },
     'bajar': function() {
+    	posy += 600;
       window.scroll({
 		  top: posy,
 		  behavior: 'smooth'
 		});
-      posy += 600;
+      
     },
     'inicio': function() {
       location.href="https://dry-eyrie-04718.herokuapp.com/vistas/inicio/inicio.php";
