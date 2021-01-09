@@ -6,6 +6,20 @@ if (annyang) {
     'hola': function() {
       alert("Bienvenido a ECPROJECT");
     },
+    'subir': function() {
+      window.scroll({
+		  top: -500,
+		  left: 0,
+		  behavior: 'smooth'
+		});
+    },
+    'bajar': function() {
+      window.scroll({
+		  top: 500,
+		  left: 0,
+		  behavior: 'smooth'
+		});
+    },
     'inicio': function() {
       location.href="https://dry-eyrie-04718.herokuapp.com/vistas/inicio/inicio.php";
     },
