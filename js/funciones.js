@@ -24,7 +24,7 @@ function onSignIn(googleUser) {
 
     $.ajax({
         method: "POST",
-        url: "some.php",
+        url: "../../modelo/Autenticar_Usuario.php",
         data: { 
             "name": profile.getName(), 
             "urlimagen": profile.getImageUrl(),
