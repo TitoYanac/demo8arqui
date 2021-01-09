@@ -26,10 +26,10 @@ function onSignIn(googleUser) {
         method: "POST",
         url: "../../modelo/Autenticar_Usuario.php",
         data: { 
-            "name": profile.getName(), 
-            "urlimagen": profile.getImageUrl(),
-            "email": profile.getEmail(),
-            "token": id_token
+            name: profile.getName(), 
+            urlimagen: profile.getImageUrl(),
+            email: profile.getEmail(),
+            token: id_token
         }
     })
     .done(function( msg ) {
